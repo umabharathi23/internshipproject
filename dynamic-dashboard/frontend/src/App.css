@@ -1,0 +1,219 @@
+/* Theme Base Styling */
+.App.dark {
+  background-color: #1e1e2f;
+  color: white;
+}
+/* Centering the Dashboard Title */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.App.light {
+  background-color: #f5f5f5;
+  color: #2c3e50;
+}
+/* Mode Toggle Button */
+.mode-toggle {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mode-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Widget Header Gradient Colors */
+.App.light .widget-header {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+}
+
+.App.dark .widget-header {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  color: #2c3e50;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.mode-toggle-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.mode-toggle {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+/* Add dark mode styling */
+.App.dark {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+}
+
+/* Widget container adjustments */
+.App.dark .widget-container {
+  background-color: #2c2c3e;
+  color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* Widget header in dark mode */
+.App.dark .widget-header {
+  background-color: #3a3a55;
+  color: #ffffff;
+}
+
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboard-container {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1200px;
+}
+
+/* Widget Container */
+.widget-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.widget-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Widget Header with Dynamic Theme Support */
+.widget-header {
+  padding: 12px 20px;
+  font-weight: 500;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: move;
+  display: flex;
+  align-items: center;
+}
+
+.App.light .widget-header {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.App.dark .widget-header {
+  background-color: #f5f5f5;
+  color: #2c3e50;
+}
+
+.drag-handle {
+  margin-right: 10px;
+  cursor: move;
+  user-select: none;
+}
+
+.widget-content {
+  padding: 20px;
+  height: calc(100% - 50px);
+  overflow: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Grid Layout styles */
+.react-grid-layout {
+  position: relative;
+  transition: height 200ms ease;
+}
+
+.react-grid-item {
+  transition: all 200ms ease;
+  transition-property: left, top, width, height;
+}
+
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+
+.react-grid-item.resizing {
+  z-index: 1;
+  will-change: width, height;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: rgba(44, 62, 80, 0.1);
+  border: 2px dashed #2c3e50;
+  border-radius: 8px;
+  opacity: 0.5;
+  transition-duration: 100ms;
+  z-index: 2;
+  user-select: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .widget-container {
+    margin-bottom: 15px;
+  }
+}

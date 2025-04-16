@@ -1,0 +1,58 @@
+.job-credits-widget {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    border-radius: 20px;
+    padding: 20px;
+    color: #2c3e50;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .job-credits-widget h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2d3436;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .credit-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border-left: 5px solid #198754;
+  }
+  
+  .credit-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
+  
+  .icon {
+    font-size: 22px;
+    color: #6c5ce7;
+  }
+  
+  .type {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+  
+  .count {
+    font-size: 16px;
+    color: #636e72;
+  }
+ 
+ 
+
+  
