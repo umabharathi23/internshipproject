@@ -11,26 +11,26 @@ import JobCredits from "./components/JobCredits";
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const [layouts, setLayouts] = useState({
     lg: [
-      { i: "most-popular", x: 0, y: 0, w: 6, h: 3 },
-      { i: "active-jobs", x: 6, y: 0, w: 6, h: 3 },
-      { i: "job-credits", x: 0, y: 3, w: 6, h: 3 },
-      { i: "total-views", x: 6, y: 3, w: 6, h: 3 }
+      { i: "most-popular", x: 0, y: 0, w: 6, h: 3 },      // large widget for Most Popular Job
+      { i: "active-jobs", x: 6, y: 0, w: 6, h: 3 },       // Active Jobs widget
+      { i: "job-credits", x: 0, y: 3, w: 6, h: 4 },       // increased height for Job Credits
+      { i: "total-views", x: 6, y: 3, w: 6, h: 4 }        // increased height for Total Job Views
     ],
     md: [
       { i: "most-popular", x: 0, y: 0, w: 5, h: 3 },
       { i: "active-jobs", x: 5, y: 0, w: 5, h: 3 },
-      { i: "job-credits", x: 0, y: 3, w: 5, h: 3 },
-      { i: "total-views", x: 5, y: 3, w: 5, h: 3 }
+      { i: "job-credits", x: 0, y: 3, w: 5, h: 3 },       // increased height for smaller screens
+      { i: "total-views", x: 5, y: 3, w: 5, h: 3 }        // increased height for smaller screens
     ],
     sm: [
       { i: "most-popular", x: 0, y: 0, w: 6, h: 3 },
       { i: "active-jobs", x: 0, y: 3, w: 6, h: 3 },
-      { i: "job-credits", x: 0, y: 6, w: 6, h: 3 },
-      { i: "total-views", x: 0, y: 9, w: 6, h: 3 }
+      { i: "job-credits", x: 0, y: 6, w: 6, h: 3 },       // increased height for small screens
+      { i: "total-views", x: 0, y: 9, w: 6, h: 3 }        // increased height for small screens
     ]
   });
 
